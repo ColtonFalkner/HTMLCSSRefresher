@@ -14,6 +14,21 @@ body {
   // margin-left: auto;
   // margin-right: auto;
   margin: 50px auto;
+  position: relative;
+}
+
+.container::before {
+  content: 'SALE';
+  background-color: #cb1e0b;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 16px;
+  // font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  left: -25px;
 }
 
 article {
@@ -89,6 +104,10 @@ button:hover {
 #details {
   text-transform: uppercase;
   font-size: 16px;
+  position: relative;
+}
+
+#details::before {
 }
 
 a {
@@ -104,4 +123,35 @@ a:visited {
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+.boxes {
+  width: 22px;
+  height: 22px;
+  margin: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: rgba(75, 29, 29, 0.605);
 }
